@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "products",
+    "description": "Список товаров"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "category": {
+      "default": "",
+      "type": "string"
+    },
+    "descriptions": {
+      "default": "",
+      "type": "text"
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
